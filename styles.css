@@ -1,0 +1,202 @@
+* {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #0a3871;
+}
+body {
+  background-color: #f3f5fc;
+}
+
+div#root {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  width: 70%;
+}
+
+header {
+  display: block;
+  height: 100px;
+}
+
+header img#alura-logo {
+  position: fixed;
+  top: 30px;
+  left: 5%;
+}
+
+div#textArea {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea {
+  width: 50%;
+  height: 56vh;
+  margin-top: 5%;
+  border: none;
+  background-color: #ffffff00;
+  resize: none;
+  font-size: 2.5em;
+  outline: none;
+  overflow: auto;
+  padding-bottom: 3%;
+  margin-left: 0%;
+}
+
+textarea::placeholder {
+  color: #0a3871;
+  opacity: 1;
+}
+
+div#alert-text {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+div#alert-text p {
+  font-size: 0.8em;
+}
+
+div#alert-text img {
+  width: 5%;
+}
+
+div#container-botones {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+
+button {
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 35%;
+}
+
+button#encriptar {
+  background-color: #0a3871;
+  color: #f3f5fc;
+}
+
+button#encriptar:hover {
+  background-color: #07254b;
+  color: #f3f5fc;
+}
+
+button#desencriptar {
+  background-color: #f3f5fc;
+  color: #0a3871;
+  border: #0a3871 1px solid;
+}
+
+button#desencriptar:hover {
+  background-color: #d9dbe2;
+  color: #0a3871;
+}
+
+aside {
+  background-color: white;
+  width: 23%;
+  height: 90vh;
+  margin-top: 3%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside img {
+  width: 80%;
+  margin-top: 20%;
+}
+
+aside div#aside-notFoundText {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+aside div#aside-notFoundText h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0%;
+}
+
+aside div#aside-notFoundText h2 {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  margin-top: 0%;
+}
+
+aside textarea {
+  width: 85%;
+  height: 80%;
+  color: grey;
+  margin-bottom: 10%;
+}
+
+aside button {
+  width: 80%;
+  height: 7%;
+}
+
+footer div.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "col-1"
+    "col-2";
+}
+
+footer div.container div.col-1 h2,
+footer div.container div.col-2 h2 {
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+footer div.container div.col-1 ul,
+footer div.container div.col-2 ul {
+  list-style: none;
+}
+
+footer div.container div.col-1 ul li,
+footer div.container div.col-2 ul li {
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+footer div.container div.col-1 ul li box-icon,
+footer div.container div.col-2 ul li a box-icon {
+  position: relative;
+  top: 6px;
+  right: 6px;
+}
+
+a {
+  text-decoration: none;
+}

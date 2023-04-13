@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <div id="root">
+      <main>
+        <header>
+          <img id="alura-logo" src="assets/Vector.svg" />
+        </header>
+        <div id="textArea">
+          <textarea
+            id="textArea-input"
+            placeholder="Ingrese el texto aqui"
+          ></textarea>
+          <div id="alert-text">
+            <p>
+              <img src="assets/alert.svg" /> Solo letras minusculas y sin
+              acentos
+            </p>
+          </div>
+          <div id="container-botones">
+            <button id="encriptar" onclick="getText()">Encriptar</button>
+            <button id="desencriptar" onclick="desencripter()">
+              Desencriptar
+            </button>
+          </div>
+        </div>
+      </main>
+      <aside id="aside-Encripter">
+        <img src="assets/Muñeco.svg" />
+        <div id="aside-notFoundText">
+          <h1>Ningun mensaje fue encontrado</h1>
+          <h2>Ingrese el texto que desees encriptar o desencriptar</h2>
+        </div>
+        <!-- <textarea id="encripterText" readonly></textarea>
+        <button id="desencriptar">Copiar</button> -->
+      </aside>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="col-1">
+          <h2>Autor</h2>
+          <ul>
+            <li>
+              <box-icon name="user"></box-icon>Victor Rafael Valdivia Gomez
+            </li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <h2>Redes Sociales</h2>
+          <ul>
+            <li>
+              <a href="#" target="_blank"
+                ><box-icon type="logo" name="github"></box-icon>GitHub</a
+              >
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><box-icon name="linkedin" type="logo"></box-icon>Linkedin</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
