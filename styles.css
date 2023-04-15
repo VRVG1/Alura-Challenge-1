@@ -200,3 +200,377 @@ footer div.container div.col-2 ul li a box-icon {
 a {
   text-decoration: none;
 }
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  * {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    color: #0a3871;
+  }
+
+  body {
+    background-color: #f3f5fc;
+  }
+  div#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  main {
+    width: 100%;
+  }
+  header {
+    display: block;
+    height: 60px;
+  }
+  header img#alura-logo {
+    position: fixed;
+    top: 15px;
+    left: 5%;
+    max-width: 100px;
+  }
+  div#textArea {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  textarea {
+    width: 90%;
+    height: 30vh;
+    margin-top: 5%;
+    border: none;
+    background-color: #ffffff00;
+    resize: none;
+    font-size: 1.8em;
+    outline: none;
+    overflow: auto;
+    padding-bottom: 3%;
+    margin-left: 0%;
+  }
+  textarea::placeholder {
+    color: #0a3871;
+    opacity: 1;
+  }
+  div#alert-text {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  div#alert-text p {
+    font-size: 0.8em;
+  }
+  div#alert-text img {
+    width: 5%;
+  }
+  div#container-botones {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+  }
+  button {
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 45%;
+  }
+  button#encriptar {
+    background-color: #0a3871;
+    color: #f3f5fc;
+  }
+  button#encriptar:hover {
+    background-color: #07254b;
+    color: #f3f5fc;
+  }
+  button#desencriptar {
+    background-color: #f3f5fc;
+    color: #0a3871;
+    border: #0a3871 1px solid;
+  }
+
+  button#desencriptar:hover {
+    background-color: #d9dbe2;
+    color: #0a3871;
+  }
+
+  aside {
+    background-color: white;
+    width: 80%;
+    height: 80vh;
+    margin-top: 3%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  aside img {
+    width: 60%;
+    margin-top: 20%;
+  }
+
+  aside div#aside-notFoundText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  aside div#aside-notFoundText h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0%;
+  }
+
+  aside div#aside-notFoundText h2 {
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-top: 0%;
+  }
+
+  aside textarea {
+    width: 80%;
+    height: 60%;
+    color: grey;
+    margin-bottom: 10%;
+  }
+
+  aside button {
+    width: 70%;
+    height: 7%;
+  }
+
+  footer div.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "col-1"
+      "col-2";
+  }
+
+  footer div.container div.col-1 h2,
+  footer div.container div.col-2 h2 {
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+  footer div.container div.col-1 ul,
+  footer div.container div.col-2 ul {
+    list-style: none;
+  }
+
+  footer div.container div.col-1 ul li,
+  footer div.container div.col-2 ul li {
+    font-size: 0.9rem;
+    font-weight: lighter;
+  }
+  footer div.container div.col-1 ul li box-icon,
+  footer div.container div.col-2 ul li a box-icon {
+    position: relative;
+    top: 6px;
+    right: 6px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  * {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    color: #0a3871;
+  }
+  body {
+    background-color: #f3f5fc;
+  }
+
+  div#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  header {
+    display: block;
+    height: 60px;
+  }
+
+  header img#alura-logo {
+    position: fixed;
+    top: 15px;
+    left: 5%;
+    max-width: 100px;
+  }
+
+  div#textArea {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  textarea {
+    width: 90%;
+    height: 30vh;
+    margin-top: 5%;
+    border: none;
+    background-color: #ffffff00;
+    resize: none;
+    font-size: 1.8em;
+    outline: none;
+    overflow: auto;
+    padding-bottom: 3%;
+    margin-left: 0%;
+  }
+
+  textarea::placeholder {
+    color: #0a3871;
+    opacity: 1;
+  }
+
+  div#alert-text {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  div#alert-text p {
+    font-size: 0.8em;
+  }
+
+  div#alert-text img {
+    width: 5%;
+  }
+
+  div#container-botones {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+  }
+
+  button {
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 45%;
+  }
+
+  button#encriptar {
+    background-color: #0a3871;
+    color: #f3f5fc;
+  }
+
+  button#encriptar:hover {
+    background-color: #07254b;
+    color: #f3f5fc;
+  }
+
+  button#desencriptar {
+    background-color: #f3f5fc;
+    color: #0a3871;
+    border: #0a3871 1px solid;
+  }
+
+  button#desencriptar:hover {
+    background-color: #d9dbe2;
+    color: #0a3871;
+  }
+
+  aside {
+    width: 90%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+  }
+
+  aside img {
+    width: 60%;
+    margin-top: 10%;
+  }
+
+  aside textarea {
+    width: 90%;
+    height: 40%;
+    color: grey;
+    margin-bottom: 10%;
+  }
+
+  aside button {
+    width: 90%;
+    height: 20%;
+  }
+
+  footer div.container {
+    display: block;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  footer div.container div.col-1 h2,
+  footer div.container div.col-2 h2 {
+    font-size: 1.2rem;
+    margin-bottom: 3%;
+  }
+
+  footer div.container div.col-1 ul,
+  footer div.container div.col-2 ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  footer div.container div.col-1 ul li,
+  footer div.container div.col-2 ul li {
+    font-size: 1rem;
+    margin-bottom: 5%;
+  }
+
+  footer div.container div.col-1 ul li box-icon,
+  footer div.container div.col-2 ul li a box-icon {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-right: 5px;
+  }
+}
